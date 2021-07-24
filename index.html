@@ -3,84 +3,166 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title></title>
   </head>
-
   <body>
-
     <header>
       <nav class="navbar">
         <div class="navbar__brand">
-          <img src="assets/logo.png" alt="logo" class="navbar__logo">
+           <img src="assets/logo.png" alt="logo" class="navbar__logo">
         </div>
         <div class="navbar__nav__items">
-          <button type="button" name="button" class="button__primary">Order Food</button>
+          <button class="nav__item button__primary">Order Food</button>
         </div>
       </nav>
     </header>
-
     <main class="container">
-       <!-- Hero section -->
-       <section class="hero__container">
-         <div class="hero__image__container">
-           <img src="assets/hero.jpg" alt="Hero Image" class="hero__image">
-         </div>
-         <div class="hero__description">
-           <h1 class="hero__text">
-             Order food from favourite restaurants near you
-           </h1>
-           <button type="button" name="button" class="button__primary">Order Now</button>
-         </div>
-       </section>
+      <!-- Hero section -->
+      <section class="hero__container">
+        <div class="hero__image__container">
+          <div class="hero__image__bg">
+             <img src="assets/svg/herobgpattren.svg" alt="Hero Background">
+          </div>
+          <img src="assets/hero.jpg" alt="hero image" class="hero__image" >
+        </div>
+        <div class="hero__description">
+          <h1 class="hero__text">
+            Order food from favourite restaurants near you.
+          </h1>
+          <button class="button__primary">Order Now</button>
+        </div>
+      </section>
 
-       <!-- Explore Menu Section -->
-       <section class="explore__menu__container">
-         <h1 class="explore__menu__text">Explore Our Menu</h1>
-         <!-- This will create the parallelogram shaped background -->
-         <div class="explore__menu__gradient__bg">
 
-         </div>
+      <!--Explore Menu-->
+      <section class="explore__menu__container">
+        <h1 class="explore__menu__text">Explore Our Menu</h1>
+        <div class="explore__menu__gradient__bg">
 
-         <div class="explore__menu__lists">
-           <!-- Burger -->
-           <div class="food__card">
-             <div class="food__card__image__container">
-               <img src="assets/burger.jpg" alt="burger" class="food__image">
-             </div>
-             <div class="food__card__description">
-               <h3 class="food__title">Burger</h3>
-               <p>Burger King, Mcdonalds, Burger Place <span style="color:#D83A56">+3</span> </p>
-             </div>
-           </div>
+        </div>
+        <div class="explore__menu__lists">
+          <!--Burger-->
+          <div class="food__card ">
+            <div class="food__card__image__container">
+              <img src="assets/burger.jpg" alt="burger" class="food__image">
+            </div>
+            <div class="food__card__description">
+          <h3 class="food__title">Burger</h3>
+          <p>Burger King, Mcdonalds, Burger Place <span style="color: #D83A56;">+3</span></p>
+            </div>
+          </div>
 
-           <!-- Pizza -->
-           <div class="food__card" id="pizza__card">
-             <div class="food__card__image__container">
-               <img src="assets/pizza.jpg" alt="burger" class="food__image">
-             </div>
-             <div class="food__card__description">
-               <h3 class="food__title">Pizza</h3>
-               <p>Pizza Hut, Domino's Pizza <span style="color:#D83A56">+3</span> </p>
-             </div>
-           </div>
+          <!--pizza-->
+          <div class="food__card " id="pizza__card">
+            <div class="food__card__image__container">
+              <img src="assets/pizza.jpg" alt="burger" class="food__image">
+            </div>
+            <div class="food__card__description">
+          <h3 class="food__title">Pizza</h3>
+          <p>Pizza Hut, Domino's Pizza <span style="color: #D83A56;">+3</span></p>
+            </div>
+          </div>
+          <!--Ice creams-->
+          <div class="food__card ">
+            <div class="food__card__image__container">
+              <img src="assets/iceCream.jpg" alt="burger" class="food__image">
+            </div>
+            <div class="food__card__description">
+          <h3 class="food__title">Ice Cream</h3>
+          <p>Baskin Robins, Ibaco <span style="color: #D83A56;">+3</span></p>
+            </div>
+          </div>
+        </div>
 
-           <!-- Ice creams -->
-           <div class="food__card">
-             <div class="food__card__image__container">
-               <img src="assets/iceCream.jpg" alt="burger" class="food__image">
-             </div>
-             <div class="food__card__description">
-               <h3 class="food__title">Ice Cream</h3>
-               <p>Baskin Robins, Ibaco <span style="color:#D83A56">+3</span> </p>
-             </div>
-           </div>
+        <!-- View More Button -->
+        <div class="view__more">
+          <button class="view__more__button">View More</button>
+        </div>
+      </section>
 
-         </div>
-       </section>
+      <section class="restaurant__container">
+        <div class="restaurant__container__description">
+          <h4 class="restaurant__text">
+            Order from 100s of restaurants
+          </h4>
+        </div>
+
+        <div class="restaurant__container__image__list">
+          <div class="restaurant__image__list__1">
+            <img src="assets/restaurant1.jpg" class="restaurant-img-1" alt="restaurant-img-1">
+            <img src="assets/restaurant2.jpg" class="restaurant-img-2" alt="restaurant-img-2">
+          </div>
+          <div class="restaurant__image__list__2">
+            <img src="assets/restaurant4.jpg" class="restaurant-img-3" alt="restaurant-img-3">
+            <img src="assets/restaurant3.jpg" class="restaurant-img-4" alt="restaurant-img-4">
+          </div>
+        </div>
+      </section>
+
+
+      <section class="stay__updated__container container my-4">
+
+        <div class="stay__updated__container">
+          <div class="stay__updated__text">
+            <h1>Stay Updated</h1>
+          </div>
+
+          <div class="stay__updated__email">
+            <form>
+              <div class="form-row">
+                <div class="col">
+                  <input type="email" class="form-control email__border" placeholder="xyz@123.com">
+                </div>
+                <div class="col">
+                  <button type="button" class="btn btn-info button__update">Get Updates</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <section class="end__image__section">
+        <div class="end__image__bg"></div>
+
+        <div class="end__image__text">
+          <h3>When a man's stomach is full, it makes no difference whether he is rich or poor.</h3>
+        </div>
+      </section>
+
     </main>
+
+
+    <footer>
+      <div class="footer container ">
+        <div class="col footer__logo">
+          <img src="assets/logo.png" alt="Zomato-logo" class="zomato__footer__logo">
+        </div>
+
+        <div class="row footer-icons">
+        <div class="col-md-4 col-sm-2"></div>
+        <div class="col-md-1 col-sm-2"><a href=""><i class="fa fa-facebook"></i></a></div>
+        <div class="col-md-1 col-sm-2"><a href=""><i class="fa fa-linkedin"></i></a></div>
+        <div class="col-md-1 col-sm-2"><a href=""><i class="fa fa-instagram"></i></a></div>
+        <div class="col-md-1 col-sm-2"><a href=""><i class="fa fa-github"></i></a></div>
+        <div class="col-md-4 col-sm-2"></div>
+      </div>
+
+        <div class="footer-bottom">
+              &copy NirmalyaOP&nbsp 2021 | Designed by Nirmalya Ray
+        </div>
+
+      </div>
+    </footer>
+
 
   </body>
 </html>
